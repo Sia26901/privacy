@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیاست حریم خصوصی و امنیت | امیر جی‌پی‌تی</title>
+    <style>
+        :root {
+            --primary: #3498db;
+            --success: #27ae60;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --title-color: #2c3e50;
+            --border-color: #e0e0e0;
+            --shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        /* استایل حالت شب */
+        body.dark-mode {
+            --bg-color: #1a1a1b;
+            --text-color: #e1e1e1;
+            --card-bg: #2d2d2e;
+            --title-color: #ffffff;
+            --border-color: #404040;
+            --shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        /* دکمه تغییر تم */
+        .theme-switch {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--title-color);
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-right: 4px solid var(--primary);
+            padding-right: 15px;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        p, li {
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            padding-right: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* بخش تماس با ما */
+        .contact-card {
+            background: rgba(52, 152, 219, 0.05);
+            border: 1px dashed var(--primary);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            transition: transform 0.2s;
+        }
+
+        .tg { background: #0088cc; }
+        .bl { background: #56ab2f; }
+        .rb { background: #ee0979; }
+
+        .social-btn:hover { transform: scale(1.05); }
+
+        /* دکمه نهایی سایت - طراحی تخت و صاف */
+        .btn-site {
+            display: block;
+            width: 100%;
+            background: var(--success);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s;
+            box-sizing: border-box; /* برای صاف شدن کامل */
+        }
+
+        .btn-site:hover {
+            background: #219150;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="theme-switch" onclick="toggleTheme()" id="themeBtn">
+        🌙 حالت شب
+    </button>
+
+    <div class="container">
+        <h1>سیاست حریم خصوصی و امنیت</h1>
+        <span class="subtitle">اپلیکیشن هوشمند امیر جی‌پی‌تی (Amir GPT)</span>
+
+        <p>به «امیر جی‌پی‌تی» خوش آمدید. ما متعهد هستیم که از حریم خصوصی شما به بهترین شکل ممکن محافظت کنیم. این سند به شما توضیح می‌دهد که چه اطلاعاتی جمع‌آوری می‌شود و چگونه از آن‌ها استفاده می‌کنیم تا تجربه‌ای امن و باکیفیت داشته باشید.</p>
+
+        <h2>۱. اطلاعات جمع‌آوری شده</h2>
+        <p>ما برای ارائه خدمات بهتر، ممکن است داده‌های زیر را به صورت محدود پردازش کنیم:</p>
+        <ul>
+            <li><strong>محتوای گفتگو:</strong> پیام‌هایی که شما ارسال می‌کنید جهت پردازش توسط هوش مصنوعی و ارائه پاسخ به سرور ارسال می‌شوند.</li>
+            <li><strong>اطلاعات فنی:</strong> شامل نسخه اندروید، مدل دستگاه و لاگ‌های مربوط به خطاهای برنامه جهت عیب‌یابی و بهبود پایداری اپلیکیشن.</li>
+            <li><strong>شناسه دستگاه:</strong> برای شناسایی کاربران منحصربه‌فرد و جلوگیری از سوءاستفاده از منابع سرور.</li>
+        </ul>
+
+        <h2>۲. نحوه استفاده از داده‌ها</h2>
+        <p>اطلاعات شما صرفاً برای موارد زیر استفاده می‌شود:</p>
+        <ul>
+            <li>نمایش پاسخ‌های دقیق و مرتبط توسط مدل‌های هوش مصنوعی.</li>
+            <li>بهبود رابط کاربری بر اساس رفتار کلی (و نه فردی) کاربران.</li>
+            <li>ارائه به‌روزرسانی‌های فنی و امنیتی.</li>
+        </ul>
+
+        <h2>۳. امنیت و رمزنگاری</h2>
+        <p>امنیت شما اولویت ماست. تمامی تبادلات داده بین اپلیکیشن و سرورها از طریق پروتکل‌های امن <strong>SSL/TLS</strong> انجام می‌شود. این یعنی هیچ شخص ثالثی در مسیر ارتباطی قادر به شنود یا دسترسی به پیام‌های شما نخواهد بود.</p>
+
+        <h2>۴. عدم دسترسی به اطلاعات شخصی</h2>
+        <p>امیر جی‌پی‌تی به هیچ عنوان به گالری تصاویر، مخاطبین، پیامک‌ها یا موقعیت مکانی دقیق شما دسترسی ندارد. ما معتقدیم که یک ابزار هوش مصنوعی نباید بیش از نیاز فنی خود، دسترسی دریافت کند.</p>
+
+        <h2>۵. اشتراک‌گذاری با اشخاص ثالث</h2>
+        <p>ما داده‌های شما را به شرکت‌های تبلیغاتی یا بازاریابی نمی‌فروشیم. پیام‌های شما صرفاً جهت پردازش به API‌های معتبر هوش مصنوعی (مانند OpenAI) ارسال می‌شود که آن‌ها نیز استانداردهای سختگیرانه حریم خصوصی خود را دارند.</p>
+
+        <h2>۶. حقوق کاربران</h2>
+        <p>شما در هر زمان می‌توانید با پاک کردن داده‌های اپلیکیشن از تنظیمات گوشی، تاریخچه محلی گفتگوهای خود را حذف کنید. همچنین ما هیچ‌گونه سوابق هویتی پایداری از شما ذخیره نمی‌کنیم که قابل ردیابی به شخص شما باشد.</p>
+
+        <div class="contact-card">
+            <strong>ارتباط با توسعه‌دهنده</strong>
+            <p>در صورت داشتن هرگونه سوال یا گزارش مشکل، می‌توانید از طریق راه‌های زیر با ما در ارتباط باشید:</p>
+            <p>ایمیل: support@mail.ir</p>
+            <div class="social-links">
+                <a href="https://t.me/ciah_am" class="social-btn tg">تلگرام</a>
+                <a href="https://ble.ir/Mr_cia" class="social-btn bl">بله</a>
+                <a href="https://rubika.ir/Mr_ciah" class="social-btn rb">روبیکا</a>
+            </div>
+        </div>
+
+        <a href="https://amirgpt.ir" class="btn-site">ورود به وب‌سایت رسمی امیر جی‌پی‌تی 🚀</a>
+    </div>
+
+    <footer>
+        آخرین بروزرسانی: خرداد ۱۴۰۵
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.getElementById('themeBtn');
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                btn.innerHTML = '☀️ حالت روشن';
+            } else {
+                btn.innerHTML = '🌙 حالت شب';
+            }
+        }
+    </script>
+</body>
+</html>
